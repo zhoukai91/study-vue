@@ -8,7 +8,7 @@
      import Loading from '../../../components/loading/loading.vue'
 ```
 
-使用这种方式导入文件不方便，并且容易出错。项目结构如下
+使用这种方式导入文件不方便，并且容易出错。项目结构如下，其中**build文件夹为项目构建\(webpack\)相关代码**
 
 ![](/assets/import.png)
 
