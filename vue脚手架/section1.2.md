@@ -75,8 +75,10 @@ imgUrl : './test.png'
 <img :src='imgUrl' />  // 此时webpack只会把它当做字符串处理从而找不到图片地址(即不会对该图片进行打包)，无法正确引用该本地图片
 
 解决方法
-1、将静态资源图片放在src同级别的static文件夹中
+1、将静态资源图片放在src同级别的static文件夹中。  webpack将static文件夹中的内容拷贝到项目运行的根目录下。
+
 2、imgUrl: "require('./test.png')" ，该方法会将图片转成base64存在内存中
+
 3、import avatar from './logo.png'
    imgUrl : avatar
 ```
