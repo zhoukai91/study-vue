@@ -2,7 +2,7 @@
 
 ### 1、**场景一：**
 
-**         在table.vue组件中导入loading.vue组件**
+**      **   在table.vue组件中导入loading.vue组件
 
 ```
      import Loading from '../../../components/loading/loading.vue'
@@ -33,6 +33,12 @@ module.exports = {
         }
   },  
 }
+```
+
+在table.vue组件中，可以改修为：
+
+```js
+import Loading from 'components/loading/loading.vue'
 ```
 
 
