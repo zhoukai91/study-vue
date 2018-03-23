@@ -45,7 +45,15 @@ import Loading from 'components/loading/loading.vue'
 
 **在vue文件使中**，用别名路径加载静态资源时\(样式文件，图片等\)，需要在路径前加上波浪号\(~\)，以下是home.vue组件的部分代码。
 
-```
+```js
+<template>
+......
+    <img src='~common/images/logo.png'>
+.....
+</template>
+
+.....
+
 <style lang="stylus" rel="stylesheet/stylus"> 
 @import 'scss_vars'
 
@@ -55,17 +63,5 @@ import Loading from 'components/loading/loading.vue'
 
 ### 3、本地图片无法显示
 
- VUE通过v-bind绑定本地图片资源的无法显示问题
-
-
-
-
-
-
-
-
-
-
-
-
+VUE通过v-bind绑定本地图片资源的无法显示问题
 
