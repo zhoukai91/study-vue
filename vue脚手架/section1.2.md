@@ -65,5 +65,28 @@ import Loading from 'components/loading/loading.vue'
 
 ### 3、本地图片无法显示
 
-通过v-bind指令动态绑定本地图片资源无法显示问题。
+#### 通过v-bind指令动态绑定本地图片资源无法显示问题。
+
+场景：通过变量保存图片的src路径，或者在v-for中循环显示图片。
+
+```js
+imgUrl : './test.png'
+
+<img :src='imgUrl' />  // 此时webpack只会把它当做字符串处理从而找不到图片地址(即不会对该图片进行打包)，无法正确引用该本地图片
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
