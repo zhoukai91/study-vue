@@ -8,11 +8,13 @@
      import Loading from '../../../components/loading/loading.vue'
 ```
 
-      使用这种方式导入文件不方便，并且容易出错
+  使用这种方式导入文件不方便，并且容易出错
 
-###       解决方法： 别名配置
+### 解决方法： 别名配置
 
-         查看 build / webpack.base.config.js文件。
+```
+     查看 build / webpack.base.config.js文件。
+```
 
 ```js
 function resolve (dir) {
@@ -30,7 +32,7 @@ module.exports = {
           'api': resolve('src/api'),
         }
   },  
-} 
+}
 ```
 
 
