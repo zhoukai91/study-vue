@@ -87,9 +87,36 @@ imgUrl : './test.png'
 
 ### 3、前后端分离，前端请求后台api接口
 
+#### 场景
+
 在开发环境下，通过 `npm run dev`  在本地运行项目。 vue -cli 将会在本地启动一个node服务器。（http:loaclhost:8080）
 
-当访问其他后台api时，因为vue的localhost与访问域名不一致导致，会出现跨域问题。
+当访问其他后台api时，因为vue的localhost与访问域名不一致导致，会出现跨域问题。vue-cli通过代理服务解决该问题。
+
+代理服务：简单理解为把你的域名转换成你访问的域名，形成同源，就能访问。
+
+#### 代理设置
+
+在config /index.js 文件中，
+
+```js
+dev: {
+ env: require('./dev.env'),
+ port: 8080,
+ autoOpenBrowser: true,
+ assetsSubDirectory: 'static',
+ assetsPublicPath: '/',
+ proxyTable: {
+   '/api':{
+     target:"http://172.16.61.118:8086",//设置你调用的接口域名和端口号 别忘了加http
+     changeOrigin:true,
+     pathRewrite:{
+       '^/api':''//这里理解成用‘/api'代替target里面的地址，后面组件中我们掉接口时直接用api代替 
+            //比如我要调用'http://40.00.100.133:3002/user/login'，直接写‘/api/user/login'即可
+     }
+   }
+ }
+```
 
 
 
