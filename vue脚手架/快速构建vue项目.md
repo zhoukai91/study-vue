@@ -4,15 +4,11 @@
 
 vue脚手架通过node进行构建，所以需要对node的知识有一定的了解。同时，vue-cli使用webpack进行前端工程化，因此，还需要对webpack简单了解！
 
-
-
 ```
 # 全局安装 vue-cli
 ```
 
 ```
-
-
 $ npm install --global vue-cli
 
 
@@ -28,7 +24,7 @@ $ vue init webpack my-project
 $ cd my-project
 
 
-$ npm run dev
+$ npm run dev   // 其他脚本命令可以在packge.json文件中查看
 ```
 
 ### 
