@@ -1,6 +1,6 @@
 # 参数配置
 
-### 1、**场景一：**
+### 1、路径**：**
 
 **      **   在table.vue组件中导入loading.vue组件
 
@@ -29,7 +29,9 @@ module.exports = {
         .....
         alias: {
           '@': resolve('src'),
+          'common': resolve('src/common'),
           'components': resolve('src/components'),
+          'api': resolve('src/api'),
         }
   },  
 }
@@ -40,6 +42,30 @@ module.exports = {
 ```js
 import Loading from 'components/loading/loading.vue'
 ```
+
+**在vue文件使中**，用别名路径加载静态资源时\(样式文件，图片等\)，需要在路径前加上波浪号\(~\)，以下是home.vue组件的部分代码。
+
+```
+<style lang="stylus" rel="stylesheet/stylus"> 
+@import 'scss_vars'
+
+....
+</style>
+```
+
+### 3、本地图片无法显示
+
+ VUE通过v-bind绑定本地图片资源的无法显示问题
+
+
+
+
+
+
+
+
+
+
 
 
 
