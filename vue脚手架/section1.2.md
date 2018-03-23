@@ -61,7 +61,25 @@ import Loading from 'components/loading/loading.vue'
 </style>
 ```
 
+### 
+
 ### 3、本地图片无法显示
 
-VUE通过v-bind绑定本地图片资源的无法显示问题
+通过v-bind指令绑定本地图片资源无法显示问题：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
