@@ -8,7 +8,9 @@
      import Loading from '../../../components/loading/loading.vue'
 ```
 
-  使用这种方式导入文件不方便，并且容易出错
+使用这种方式导入文件不方便，并且容易出错。项目结构如下
+
+![](/assets/import.png)
 
 ### 解决方法： 别名配置
 
@@ -29,7 +31,6 @@ module.exports = {
           '@': resolve('src'),
           'common': resolve('src/common'),
           'components': resolve('src/components'),
-          'api': resolve('src/api'),
         }
   },  
 }
