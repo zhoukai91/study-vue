@@ -87,13 +87,9 @@ imgUrl : './test.png'
 
 ### 3、前后端分离，前端请求后台api接口
 
-在开发环境
+在开发环境下，通过 `npm run dev`  在本地运行项目。 vue -cli 将会在本地启动一个node服务器。（http:loaclhost:8080）
 
-
-
-
-
-
+当访问其他后台api时，因为vue的localhost与访问域名不一致导致，会出现跨域问题。
 
 
 
