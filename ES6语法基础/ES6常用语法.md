@@ -59,6 +59,11 @@ export B
 import {A} from './config.js'
 import {B} from './config.js'
 import {A，B} from './config.js'
+
+
+import * as type from './config.js'
+console.log(type.A.name)
+
 ```
 
 \(1\)按需导入
