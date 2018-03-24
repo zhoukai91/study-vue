@@ -31,5 +31,17 @@ vue2.0组件间事件派发与接收  https://segmentfault.com/a/119000000801831
         3、 使用Vuex
 ```
 
+#### 
 
+#### vuex流程：
+
+
+
+state \(状态\)
+
+变化\(mutations\)
+
+actions\(动作\)
+
+![](/assets/vuex.png)
 
