@@ -19,7 +19,20 @@ if (true) {
 
 ### 模板字符串
 
+```js
+var str = 'world';
+var result = 'hello' + str;
+```
+
 ##### ES5写法：
+
+```js
+// 使用反引号 
+var str = 'world';
+var result = `hello ${str}`;
+```
+
+
 
 
 
