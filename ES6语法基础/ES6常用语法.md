@@ -89,5 +89,19 @@ import {B} from './config.js'
 import {A，B} from './config.js'
 ```
 
+### 箭头函数
+
+```js
+let that =this;
+setTimeout(function () {
+  alert(this)    // window || undefined
+}, 1000)
+
+
+setTimeout(() => {
+  console.log(this)   //  this  = that
+})
+```
+
 
 
