@@ -103,9 +103,7 @@ setTimeout(() => {
 })
 ```
 
-
-
-### 对象的扩扩展
+### 对象的扩展
 
 ```js
 let name = 'zk'
@@ -117,6 +115,13 @@ let obj = {
 }
 obj.name;
 obj.say();
+```
+
+### ... 扩展运算符
+
+```js
+let arrs = [1, 3, 4, 7, 5, 3]
+Math.max(...arrs)
 ```
 
 
