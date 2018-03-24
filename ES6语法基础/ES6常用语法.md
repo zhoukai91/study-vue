@@ -105,3 +105,19 @@ setTimeout(() => {
 
 
 
+### 对象的扩扩展
+
+```js
+let name = 'zk'
+let obj = {
+  name,
+  say () {
+    console.log('hello')
+  }
+}
+obj.name;
+obj.say();
+```
+
+
+
