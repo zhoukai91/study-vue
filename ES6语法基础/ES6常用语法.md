@@ -35,6 +35,8 @@ var str = 'world';
 var result = `hello ${str}`;
 ```
 
+### 
+
 ### 模块 \(ES5原生不支持\)
 
 ##### ES6中：
@@ -63,7 +65,6 @@ import {A，B} from './config.js'
 
 import * as type from './config.js'
 console.log(type.A.name)
-
 ```
 
 \(1\)按需导入
