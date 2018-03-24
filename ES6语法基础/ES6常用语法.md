@@ -39,6 +39,28 @@ var result = `hello ${str}`;
 
 ##### ES6中：
 
+\(1\) 按需导入
+
+```js
+// 文件 config.js， 导出模块
+const A = {
+    name: 'zk'
+};
+const B = {
+    name: 'wl'
+};
+
+export A
+export B
+```
+
+```js
+// main.js 用到，导入模块
+import {A} from './config.js'
+import {B} from './config.js'
+import {A，B} from './config.js'
+```
+
 \(1\)按需导入
 
 ```js
@@ -50,8 +72,8 @@ const B = {
     name: 'wl'
 };
 
-export const A
-export const B
+export  A
+export default B
 ```
 
 ```js
