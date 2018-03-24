@@ -35,8 +35,6 @@ var str = 'world';
 var result = `hello ${str}`;
 ```
 
-
-
 ### 模块 \(ES5原生不支持\)
 
 ##### ES6中：
@@ -54,7 +52,6 @@ const B = {
 
 export const A
 export const B
-
 ```
 
 ```js
@@ -62,10 +59,6 @@ export const B
 import {A} from './config.js'
 import {B} from './config.js'
 import {A，B} from './config.js'
-
-
-
-// 
 ```
 
 
