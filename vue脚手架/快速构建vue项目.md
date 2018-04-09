@@ -54,15 +54,13 @@ module.export = function() {
             alert("你好");
         }
     }
-    
+
 // main.js
 var a = require('./a.js');
-a.say(); 
+a.say();
 ```
 
 浏览器环境下必须采用异步模式。所以就有了 AMD，CMD 解决方案。
-
-
 
 ## 2、AMD规范
 
@@ -79,6 +77,36 @@ a.say();
 3、懒加载
 
 > AMD保留了commonjs中的require、exprots、module这三个功能。因此，为了解决“提前执行”的性能消耗，依赖的模块不写在dependencies数组中，
+
+4、示例
+
+```js
+// a.js
+define(function(){
+     return {
+          say: function(){
+               console.log('hello, a.js');
+          }
+     }
+});
+
+// b.js
+define(function(){
+     return {
+          say: function(){
+               console.log('hello, a.js');
+          }
+     }
+});
+
+// main.js
+require(['a', 'b'], function(a, b){
+     a.hello();
+     $('#b').click(function(){
+          b.hello();
+     });
+})
+```
 
 
 
