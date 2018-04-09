@@ -101,22 +101,22 @@ define(function(){
 
 // main.js
 require(['a', 'b'], function(a, b){
-     a.hello();
+     a.say();
      $('#b').click(function(){
-          b.hello();
+          b.say();
      });
 })
 
 // 懒加载方式
 // main.js
-require(['a'], function(a, b){
-     a.hello();
+require(['a'], function(a){
+     a.say();
      $('#b').click(function(){
-          b.hello();
+           require(['b'], function(b){
+               b.say();
+          });
      });
 })
-
-
 ```
 
 
