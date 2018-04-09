@@ -106,6 +106,17 @@ require(['a', 'b'], function(a, b){
           b.hello();
      });
 })
+
+// 懒加载方式
+// main.js
+require(['a'], function(a, b){
+     a.hello();
+     $('#b').click(function(){
+          b.hello();
+     });
+})
+
+
 ```
 
 
