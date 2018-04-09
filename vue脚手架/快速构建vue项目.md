@@ -127,5 +127,27 @@ require(['a'], function(a){
 
 CMD\(同步模块定义\)是SeaJS\(淘宝团队\)在推广过程中对模块化定义的规范化产。
 
-1、
+1、示例
+
+```
+// a.js
+define(function(){
+     return {
+          say: function(){
+               console.log('hello, a.js');
+          }
+     }
+});
+
+
+// main.js
+define(function(require, exports, module){
+     var a = require('a');
+     a.say();
+})
+
+
+```
+
+
 
