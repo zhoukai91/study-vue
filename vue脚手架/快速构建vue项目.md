@@ -161,5 +161,5 @@ define(function(require, exports, module){
 })
 ```
 
-
+a.js和b.js都会预先下载，但是b.js不会预先执行
 
