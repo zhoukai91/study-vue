@@ -64,6 +64,8 @@ a.say();
 
 ## 2、官方标准：ES6模块
 
+
+
 ## 3、AMD规范
 
 AMD\(异步模块定义\)是RequireJS在推广过程中对模块化定义的规范化产出。
@@ -164,6 +166,4 @@ define(function(require, exports, module){
 ```
 
 a.js和b.js都会预先下载，但是，**b.js不会预先执行（即用即返回）。**
-
-
 
