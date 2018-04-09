@@ -129,12 +129,21 @@ CMD\(同步模块定义\)是SeaJS\(淘宝团队\)在推广过程中对模块化�
 
 1、示例
 
-```
+```js
 // a.js
-define(function(){
+define(function(require, exports, module){
      return {
           say: function(){
                console.log('hello, a.js');
+          }
+     }
+});
+
+// b.js
+define(function(require, exports, module){
+     return {
+          say: function(){
+               console.log('hello, b.js');
           }
      }
 });
@@ -144,9 +153,12 @@ define(function(){
 define(function(require, exports, module){
      var a = require('a');
      a.say();
+     $('#b').click(function(){
+               var a = require('b');
+               b.say();
+          });
+     });
 })
-
-
 ```
 
 
